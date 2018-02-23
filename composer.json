@@ -1,0 +1,14 @@
+{
+    "name": "mervyn1205/date-helper",
+    "description":"a light date helper for php",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "DateHelper\\": "src\\"
+        }
+    }
+}
