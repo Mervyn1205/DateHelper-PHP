@@ -2,7 +2,14 @@
     "name": "mervyn1205/date-helper",
     "description":"a light date helper for php",
     "type": "library",
+    "license": "MIT",
     "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Mervyn",
+            "email": "404245127@qq.com"
+        }
+    ],
     "require": {
         "php": ">=5.4.0"
     },
