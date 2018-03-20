@@ -181,7 +181,8 @@ class DateHelper extends DateTime{
 
         $t2->sunday();
         if ($t2 > $end) {
-            return [$t1->format($format), $end->format($format)];
+            $dateArr[] = [$t1->format($format), $end->format($format)];
+            return $dateArr;
         }
 
         while($t2 < $end || $t1 <= $end){
@@ -206,7 +207,8 @@ class DateHelper extends DateTime{
 
         $t2->lastDayOfMonth();
         if ($t2 > $end) {
-            return [$t1->format($format), $end->format($format)];
+            $dateArr[] = [$t1->format($format), $end->format($format)];
+            return $dateArr;
         }
 
         while($t2 < $end || $t1 <= $end){
