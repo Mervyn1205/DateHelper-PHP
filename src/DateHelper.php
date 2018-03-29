@@ -214,7 +214,7 @@ class DateHelper extends DateTime{
         while($t2 < $end || $t1 <= $end){
             $dateArr[]=[$t1->format($format), $t2->format($format)];
             $t1->firstDayOfMonth()->addMonth();
-            $t2->lastDayOfMonth()->addMonth();
+            $t2->firstDayOfMonth()->addMonth()->lastDayOfMonth();
             $t2 = $t2 > $end ? $cloneEnd : $t2;
         }
 
